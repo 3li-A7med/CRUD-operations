@@ -1,0 +1,126 @@
+body{
+  min-height: 100vh;
+  background-color: #f7ecde;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+
+
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.dash{
+  border: #212529 dashed 1px;
+  margin: 1.25rem 0;
+}
+::selection {
+  background-color: #fec260;
+}
+
+main {
+
+}
+.form-control:focus{
+
+  box-shadow: 0 0 0 .25rem  #fec260;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-control:focus{
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.form-floating>.form-control-plaintext:focus, .form-floating>.form-control-plaintext:not(:placeholder-shown), .form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown) {
+  padding: .375rem .75rem;
+}
+
+.form-floating>.form-control {
+  height: auto; 
+    min-height: 1.25rem;
+    padding: .375rem .75rem;
+}
+.form-floating>.form-control::placeholder {
+    opacity: 1;
+    color: #6c757d; 
+}
+
+.button1{
+background-color: #BB4120;
+border-radius: 10px;
+border: 1px solid white;
+color: white;
+}
+.button1:hover{
+  background-color: #9a2e11;
+  
+
+}
+
+.heading h1{
+  font-size: 50px;
+  color: #352e28;
+  
+  position: relative;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal
+
+}
+.heading h1::after{
+  content: "";
+  position: absolute;
+  z-index: -2151;
+  height: 25%;
+ left:0;
+ right:0;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+    transition: all .3s ease-in;
+
+}
+.heading h1:hover::after{
+  height: 45%;
+
+}
+.text p {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+/* .test {
+  font-size: 22px;
+  padding-bottom: 0.625rem;
+  padding-inline: 5px;
+  background: linear-gradient(to right, #3ca55c, #b5ac49); 
+
+  } */
+  .table {
+    /* --bs-table-color-type: initial;
+    --bs-table-bg-type: initial;
+    --bs-table-color-state: initial;
+    --bs-table-bg-state: initial;
+    --bs-table-color: var(--bs-emphasis-color);
+    --bs-table-bg: var(--bs-body-bg);
+    --bs-table-border-color: var(--bs-border-color);
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: var(--bs-emphasis-color);
+    --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
+    --bs-table-active-color: var(--bs-emphasis-color);
+    --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
+    --bs-table-hover-color: var(--bs-emphasis-color); */
+    --bs-table-hover-bg:white
+  }

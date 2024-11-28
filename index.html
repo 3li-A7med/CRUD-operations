@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark</title>
+  <!-- ===========Font Awesome=========== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ===========Bootstrap file========== -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ===========css file========== -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- === favorite icon === -->
+  <link rel="shortcut icon" href="bookmark.png" type="image/x-icon">
+  
+</head>
+<body>
+
+<main>
+  <div class="container">
+    <div class="heading d-flex justify-content-center align-items-center p-3 py-4 mt-5 ">
+      <h1 class="heading-title">Bookmarker
+      </h1>
+    </div>
+    <div class="dash"></div>
+    <div class="text d-flex justify-content-center align-items-center py-1">
+      <p class="d-inline-block fw-bold">
+        
+        <i class="fa-solid fa-bookmark "></i>
+        Bookmark your favorite sites 
+     
+      <i class="fa-solid fa-bookmark "></i>
+    </p>
+    </div>
+
+
+    <div class="inputs pt-2">
+
+      <label for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control " id="name" 
+        oninput="validation(/^[a-zA-Z0-9]{1,21}$/, this.value, this)" 
+        placeholder="Bookmark Name">
+      </div>
+
+
+      <label for="floatingInput">   
+        <i class="fa-solid fa-link pe-2"></i>Site URL
+      </label>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control " id="url" 
+        oninput="validation(siteUrlRegex, this.value, this)" 
+        placeholder="Website URL">
+      </div>
+      
+      <div class="button d-flex justify-content-center py-3 ">
+        <button class="button1 py-2 px-5  " onclick="addURl()" >Submit</button>
+      </div>
+   
+    </div>
+    <div class="dash"></div>
+
+
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>index	</th>
+        <th>Website Name	</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </tr>
+     </thead>
+     <tbody id="content">
+
+     </tbody>
+    </table>
+
+</div>
+</main>
+  <!-- ============bootstrap file============= -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- ==============sweet alert============ -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <!-- =========js file================ -->
+  <script src="js/style.js"></script>
+</body>
+</html>
